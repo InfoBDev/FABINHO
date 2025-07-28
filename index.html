@@ -1,0 +1,165 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso SPFC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #E52207 0%, #CC0000 100%); /* Gradiente de vermelho SPFC */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .login-container {
+            background-color: #FFFFFF; /* Fundo branco para o card de login */
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra mais destacada */
+            width: 100%;
+            max-width: 350px;
+            text-align: center;
+            box-sizing: border-box;
+            border: 2px solid #000000; /* Borda preta para remeter ao SPFC */
+        }
+
+        .login-header {
+            margin-bottom: 30px;
+        }
+
+        .login-header h2 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            color: #000000; /* Preto para o título */
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .login-header p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #000000; /* Preto para os rótulos */
+            font-size: 0.9em;
+        }
+
+        .input-group input[type="text"],
+        .input-group input[type="password"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #BBBBBB; /* Borda cinza suave */
+            border-radius: 8px;
+            font-size: 1em;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+            color: #333;
+            background-color: #F8F8F8; /* Fundo levemente cinza para os campos */
+        }
+
+        .input-group input[type="text"]:focus,
+        .input-group input[type="password"]:focus {
+            border-color: #E52207; /* Vermelho SPFC no foco */
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(229, 34, 7, 0.2);
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 12px;
+            background-color: #000000; /* Preto para o botão */
+            color: #FFFFFF;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .login-button:hover {
+            background-color: #333333; /* Cinza escuro no hover */
+            transform: translateY(-2px);
+        }
+
+        .error-message {
+            color: #E52207; /* Vermelho SPFC para mensagens de erro */
+            font-size: 0.85em;
+            margin-top: 15px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Responsividade básica para telas menores */
+        @media (max-width: 400px) {
+            .login-container {
+                margin: 15px;
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <h2>Login</h2>
+            <p>Acesse sua conta do SPFC.</p>
+        </div>
+        <form class="login-form" onsubmit="return validateLogin(event)">
+            <div class="input-group">
+                <label for="username">Usuário</label>
+                <input type="text" id="username" name="username" placeholder="Usuário" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" placeholder="********" required>
+            </div>
+            <button type="submit" class="login-button">Entrar</button>
+            <div id="error-message" class="error-message"></div>
+        </form>
+    </div>
+
+    <script>
+        function validateLogin(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const errorMessage = document.getElementById('error-message');
+
+            // Credenciais fixas
+            const validUsername = 'fabinho';
+            const validPassword = 'infoB';
+
+            if (username === validUsername && password === validPassword) {
+                errorMessage.textContent = ''; // Limpa a mensagem de erro
+                alert('Login bem-sucedido! Bem-vindo, Fabinho, ao mundo Tricolor!');
+                // Redireciona para a página fabinhoinicial.html
+                window.location.href = 'fabinhoinicial.html';
+            } else {
+                errorMessage.textContent = 'Credenciais inválidas. Tente novamente!';
+            }
+            return false; // Sempre retorna false para o submit ser controlado pelo JS
+        }
+    </script>
+</body>
+</html>
