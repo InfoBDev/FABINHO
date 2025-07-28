@@ -1,0 +1,417 @@
+<html>
+    <head>
+        <title>Despedida - 2°B INFO 2025</title>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                background: #1d1d1d;
+                font-family: 'Inter', sans-serif;
+            }
+            #headerE{
+                height: 15%;
+                width: 30%;
+                float: left;
+                background: #d7d7d7;
+                text-align: center;
+            }
+                #titulo{
+                    height: 25%;
+                    width: 70%;
+                    background: #d7d7d7;
+                    float: left;
+                    margin-left: 15%;
+                    margin-top: 5%;
+                    font-size: 175%;
+                    font-weight: bold;
+                }
+                #descricao{
+                    height: 30%;
+                    width: 80%;
+                    background: #d7d7d7;
+                    float: left;
+                    margin-left: 10%;
+                    margin-top: 1%;
+                    font-size: 105%;
+                    text-align: center;
+                }
+                #trianguloA{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 10;       
+                    height: 15%;
+                    aspect-ratio: 1/1;
+                    background-color: #d7d7d7;
+                    clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
+                    margin-left: 29.9%;
+                    margin-top: 0.01%;
+                }
+                #trianguloB{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 10;       
+                    height: 15%;
+                    aspect-ratio: 1/1;
+                    background-color: #d7d7d7;
+                    clip-path: polygon(100% 100%, 100% 0%,0% 0%);
+                    float: right;
+                    margin-left: 82.9%;
+                }
+            #headerC{
+                height: 15%;
+                width: 60%;
+                float: right;
+            }
+                #header1{
+                    height: 39%;
+                    width: 100%;
+                    background: #FE0000;
+                }
+                #header2{
+                    height: 22%;
+                    width: 100%;
+                    background: #FFFFFF;
+                }
+                #header3{
+                    height: 39%;
+                    width: 100%;
+                    background: #000000;
+                }
+                #escudo{
+                    height: 100%;
+                    aspect-ratio: 1/1;
+                    float: left;
+                    margin-left: 42%;
+                    background: none;
+                }
+            #headerD{
+                height: 15%;
+                width: 10%;
+                background: #d7d7d7;
+                float: right;
+            }
+                #sair{
+                   background-color: #d7d7d7 ;
+                    height: 40%;
+                    width: 60%;
+                    float: right;
+                    margin-right: 20%;
+                    margin-top: 20%;
+                    text-align: center;
+                    font-size: 200%;
+                }
+                #sairb{
+                    border: none;
+                    height: 100%;
+                    width: 100%;
+                    background: none;
+                    color: #000000;
+                    font-weight: bold;
+                }
+            #main{
+                height: 80%;
+                width: 100%;
+                background: #FFFFFF;
+                float: left;
+            }
+                #carta{
+                text-align: justify;
+                background-color: #FFFFFF;
+                height: 90%;
+                width: 55%;
+                float: left;
+                margin-top: 2%;
+                margin-left: 3%;
+                text-indent: 25px;
+                font-size: 100%;
+                }
+                    #ass{
+                        height: 5%;
+                        width: 30%;
+                        background: #FFFFFF;
+                        float: right;
+                        margin-right: 5%;
+                        margin-top: 5%;
+                        font-size: 110%;
+                    }
+                #direita{
+                    height: 90%;
+                    width: 35%;
+                    margin-top: 1.7%;
+                    margin-right: 3%;
+                    background: #FFFFFF;
+                    float: right;
+                }
+                    #linha{
+                        height: 9.090909090909091%;
+                        width: 100%;
+                        background: #FFFFFF;
+                        padding: 1;
+                    }
+                        button{
+                            height: 90%;
+                            width: 30%;
+                            border: none;
+                            border-radius: 10px;
+                            background: #FE0000;
+                            color: #FFFFFF;
+                            text-align: center;
+                            font-size: 100%;
+                            cursor: pointer;
+                        }
+                            button:hover{
+                                background: #b80000;
+                            }
+            #footer{
+                height: 10%;
+                width: 100%;
+                background: #1d1d1d;
+                float: left;
+                color: #FFFFFF;
+            }
+                hr{
+                    margin-left: 40px;
+                    margin-right: 40px;
+                }
+                #tr{
+                    text-align: justify;
+                    margin-left: 70px;
+                    font-size: 75%;
+                }
+        </style>
+    </head>
+    <body>
+        <div id="headerE">
+            <div id="titulo">
+                OBRIGADO, FABINHO!
+            </div>
+            <div id="descricao">
+                "Insistir, persistir e nunca desistir. Acredite em você sempre."  - Fabiano Bezerra
+            </div>
+           
+        </div>
+        <div id="headerD">
+            <div id="sair">
+                <button id="sairb" type="button" onclick="sair()">SAIR</button>
+                <script>
+                    function sair(){
+                        window.location.href = "index.html";
+                    }
+                </script>
+            </div>
+        </div>
+        <div id="headerC">
+            <div id="escudo">
+                <img src="https://logodownload.org/wp-content/uploads/2016/09/sao-paulo-logo-escudo.png" height="100%" width="100%">
+            </div>
+            <div id="header1">
+            </div>
+            <div id="header2">
+            </div>
+            <div id="header3">
+            </div>
+            <div id="trianguloA">
+            </div>
+            <div id="trianguloB">
+            </div>
+        </div>
+
+
+        <div id="main">
+            <div id="carta">
+                <p>
+                    Fabinho, nós só conseguimos começar dizendo obrigado. Obrigado por cada aula, por cada explicação com paciência e por acreditar na gente quando nem nós mesmos acreditávamos. A sua presença fez toda a diferença no nosso caminho, e não tem como imaginar Programação Web sem você.
+                </p>
+                <p>
+                    Desde o primeiro dia, você não foi só um professor. Foi alguém que soube ensinar com leveza, puxar a nossa orelha quando precisava, mas sempre com aquele jeito que fazia a gente querer ser melhor. Até as divs, as tags e o famoso DTP (dá teus pulos) vão sempre fazer a gente lembrar de você e do quanto essas aulas foram marcantes.
+                </p>
+                <p>
+                    Sentiremos falta do seu jeito único de explicar, das suas brincadeiras, das conversas e de todos aqueles momentos que só aconteciam porque era você ali com a gente. Vai ser estranho entrar no laboratório e perceber que não teremos mais suas aulas, suas piadas no meio das práticas e até mesmo aquelas broncas que, no fundo, só mostravam o quanto você se importava com a gente e queria o nosso melhor.
+                </p>
+                <p>
+                    Você marcou a nossa sala de uma forma inexplicável. Cada um de nós leva um pouco dos seus ensinamentos, da sua paciência e do carinho que teve com a nossa turma. Pode ter certeza: sem você, a nossa história no CEEP não teria sido a mesma.
+                </p>
+                <p>
+                    Por tudo isso e muito mais, só podemos dizer que somos imensamente gratos. E que esperamos, de verdade, que você sinta o quanto é querido por todos nós. O 2B Info sempre vai guardar você com muito carinho no coração.
+                </p>
+                <div id="ass">
+                    - 2°B de Informatica, 2025
+                </div>
+            </div>
+            <div id="direita">
+                <div id="linha">
+                    <button type="button" onclick="Anderson()">Anderson</button>
+                    <button type="button" onclick="Anny()">Anny</button>
+                    <button type="button" onclick="Antonio()">Antônio</button>
+                </div>
+                <div id="linha">
+                    <button type="button" onclick="Camiliany()">Camiliany</button>
+                    <button type="button" onclick="ClaraIsabel()">Clara Isabel</button>
+                    <button type="button" onclick="Elisa()">Elisa</button>
+                </div>
+                <div id="linha">
+                    <button type="button" onclick="Elzimar()">Elzimar</button>
+                    <button type="button" onclick="Ester()">Ester</button>
+                    <button type="button" onclick="Hellen()">Hellen</button>
+                </div>
+                <div id="linha">
+                    <button type="button" onclick="Italo()">Italo</button>
+                    <button type="button" onclick="JoaoGabriel()">João Gabriel</button>
+                    <button type="button" onclick="JoaoGuilherme()">João Guilherme</button>
+                </div>
+                <div id="linha">
+                    <button type="button" onclick="JoaoLucas()">João Lucas</button>
+                    <button type="button" onclick="JoseGuilherme()">José Guilherme</button>
+                    <button type="button" onclick="Julio()">Júlio</button>
+                </div>
+                <div id="linha">
+                    <button type="button" onclick="Juscelino()">Juscelino</button>
+                    <button type="button" onclick="Klara()">Klara</button>
+                    <button type="button" onclick="Leo()">Léo</button>
+                </div>
+                <div id="linha">
+                    <button type="button" onclick="Leticia()">Letícia</button>
+                    <button type="button" onclick="Lucas()">Lucas</button>
+                    <button type="button" onclick="MariaFernanda()">Maria Fernanda</button>
+                </div>
+                <div id="linha">
+                    <button type="button" onclick="Mavi()">Mavi</button>
+                    <button type="button" onclick="Moises()">Moisés</button>
+                    <button type="button" onclick="Natan()">Natan</button>
+                </div>
+                <div id="linha">
+                    <button type="button" onclick="Nath()">Nath</button>
+                    <button type="button" onclick="Nayara()">Nayara</button>
+                    <button type="button" onclick="PedroAlexandre()">Pedro Alexandre</button>
+                </div>
+                <div id="linha">
+                    <button type="button" onclick="PedroGabriel()">Pedro Gabriel</button>
+                    <button type="button" onclick="Pietra()">Pietra</button>
+                    <button type="button" onclick="Sarah()">Sarah</button>
+                </div>
+                <div id="linha">
+                    <button type="button" onclick="Taina()">Tainá</button>
+                    <button type="button" onclick="Vinicius()">Vinícius</button>
+                    <button type="button" onclick="Yuri()">Yuri</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="footer">
+            <p id="tr">
+                2°B INFO: a melhor melhor turma de 2025
+            </p>
+            <hr color="#808080" size="1px">
+            <p id="tr">
+                Esta página foi desenvolvida por Moisés Leão Carlos da Câmara, com o apoio dos alunos do 2°B de Informatica.
+                <br>© 2024 - 2026 - Todos os direitos reservados.
+            </p>        
+        </div>
+        <script>
+            function Anderson() {
+                window.location.href = "Anderson.html";
+            }
+            function Anny() {
+                window.location.href = "Anny.html";
+            }
+            function Antonio() {
+                window.location.href = "Antonio.html";
+            }
+            function Camiliany() {
+                window.location.href = "Camiliany.html";
+            }
+            function ClaraIsabel() {
+                window.location.href = "ClaraIsabel.html";
+            }
+            function Elisa() {
+                window.location.href = "Elisa.html";
+            }
+            function Elzimar() {
+                window.location.href = "Elzimar.html";
+            }
+            function Ester() {
+                window.location.href = "Ester.html";
+            }
+            function Hellen() {
+                window.location.href = "Hellen.html";
+            }
+            function Italo() {
+                window.location.href = "Italo.html";
+            }
+            function JoaoGabriel() {
+                window.location.href = "JoaoGabriel.html";
+            }
+            function JoaoGuilherme() {
+                window.location.href = "JoaoGuilherme.html";
+            }
+            function JoaoLucas() {
+                window.location.href = "JoaoLucas.html";
+            }
+            function JoseGuilherme() {
+                window.location.href = "JoseGuilherme.html";
+            }
+            function Julio() {
+                window.location.href = "Julio.html";
+            }
+            function Juscelino() {
+                window.location.href = "Juscelino.html";
+            }
+            function Klara() {
+                window.location.href = "Klara.html";
+            }
+            function Leo() {
+                window.location.href = "Leo.html";
+            }
+            function Leticia() {
+                window.location.href = "Leticia.html";
+            }
+            function Lucas() {
+                window.location.href = "Lucas.html";
+            }
+            function MariaFernanda() {
+                window.location.href = "Maria Fernanda.html";
+            }
+            function Mavi() {
+                window.location.href = "Mavi.html";
+            }
+            function Moises() {
+                window.location.href = "Moises.html";
+            }
+            function Natan() {
+                window.location.href = "Natan.html";
+            }
+            function Nath() {
+                window.location.href = "Nath.html";
+            }
+            function Nayara() {
+                window.location.href = "Nayara.html";
+            }
+            function PedroAlexandre() {
+                window.location.href = "PedroAlexandre.html";
+            }
+            function PedroGabriel() {
+                window.location.href = "PedroGabriel.html";
+            }
+            function Pietra() {
+                window.location.href = "Pietra.html";
+            }
+            function Sarah() {
+                window.location.href = "Sarah.html";
+            }
+            function Taina() {
+                window.location.href = "Taina.html";
+            }
+            function Vinicius() {
+                window.location.href = "Vinicius.html";
+            }
+            function Yuri() {
+                window.location.href = "Yuri.html";
+            }
+        </script>
+    </body>
+</html>
